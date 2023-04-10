@@ -28,7 +28,7 @@
       }
       
       h1 {
-        font-size: 48px;
+        font-size: 5em;
         margin-bottom: 30px;
       }
       
@@ -51,6 +51,9 @@
       a:hover {
         text-decoration: underline;
       }
+      p {
+        font-size: 3em;
+      }
       
       .bg {
         position: fixed;
@@ -65,6 +68,31 @@
         background-attachment: fixed;
         opacity: 0.5;
       }
+      .lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
     </style>
   </head>
   <body>
@@ -72,16 +100,10 @@
     <div class="container">
       <div class="wrapper">
         <h1>Mars-Hey Project</h1>
-        <p>Sorry, our website is currently under construction. We are working hard to bring you the latest updates on our Mars Rover House project, which aims to create a sustainable and mobile habitat for human exploration on the red planet.</p>
-        <p>In the meantime, follow us on social media:</p>
-        <ul>
-          <li><a href="https://twitter.com/marsroverhouse">Twitter</a></li>
-          <li><a href="https://www.facebook.com/marsroverhouse">Facebook</a></li>
-          <li><a href="https://www.instagram.com/marsroverhouse/">Instagram</a></li>
-        </ul>
+        <p>Webite currently being created</p>
+        <div class="lds-dual-ring"></div>
         <p>Thank you for your patience!</p>
       </div>
-
     </div>
   </body>
 </html>
